@@ -1,0 +1,106 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import IconButton from '../IconButton';
+
+<Meta
+  title="Components/IconButton"
+  component={IconButton}
+  argTypes={{
+    size: {
+      name: 'size',
+      description: 'The size of the icon button.',
+      defaultValue: 'md',
+      table: {
+        type: {
+          summary: '"sm" | "md"',
+        },
+        defaultValue: {
+          summary: 'md',
+        },
+      },
+      control: {
+        type: null,
+      },
+    },
+    disabled: {
+      name: 'disabled',
+      description: 'Button with disable status',
+      defaultValue: false,
+      table: {
+        type: {
+          summary: 'true | false',
+        },
+        defaultValue: {
+          summary: false,
+        },
+      },
+      control: {
+        type: null,
+      },
+    },
+  }}
+/>
+
+# IconButton API
+
+The API documentation of the IconButton React component. Learn more about the props and the CSS customization points.
+
+## Import
+
+```javascript
+import { IconButton } from '@useblu/ocean-react';
+```
+
+## Usage
+
+<Canvas withSource="open" withToolbar>
+  <Story name="Usage">
+    <IconButton>◧</IconButton>
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable story="Usage" of="." />
+
+The ref is forwarded to the root element.
+
+Any other props supplied will be provided to the root element (native element).
+
+## CSS
+
+| Global class           | Description                         |
+| ---------------------- | ----------------------------------- |
+| .ods-iconbtn           | Styles applied to the root element. |
+| .ods-iconbtn--[sm,md]  | Specifies the width of the button.  |
+| .ods-iconbtn--disabled | Styles of a disabled button.        |
+
+## Playground
+
+<Canvas>
+  <Story
+    name="Playground"
+    args={{
+      children: '↖',
+      disabled: false,
+    }}
+    argTypes={{
+      children: {
+        name: 'children',
+        control: 'text',
+      },
+      size: {
+        name: 'size',
+        control: {
+          type: 'select',
+          options: ['sm', 'md'],
+        },
+      },
+      disabled: {
+        name: 'disabled',
+        control: 'boolean',
+      },
+    }}
+  >
+    {(props) => <IconButton {...props} />}
+  </Story>
+</Canvas>
