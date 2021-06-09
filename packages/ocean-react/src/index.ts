@@ -31,5 +31,5 @@ export * from './Switch';
 export { default as Modal } from './Modal';
 export * from './Modal';
 
-export { default as IconModal } from './IconButton';
+export { default as IconButton } from './IconButton';
 export * from './IconButton';
