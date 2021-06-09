@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import { MergeElementProps } from '../_util/type';
 
-export type ButtonProps<P extends React.ElementType = 'button'> = {
+export type IconButtonProps<P extends React.ElementType = 'button'> = {
   /**
    * The component used for the root node. Either a string to use a HTML element or a component.
    * @default 'button'
@@ -33,7 +33,7 @@ function IconButtonBase<T extends React.ElementType = 'button'>(
     disabled = false,
     component,
     ...rest
-  }: ButtonProps<T>,
+  }: IconButtonProps<T>,
   ref: React.Ref<HTMLButtonElement>
 ) {
   return React.createElement(
@@ -41,9 +41,9 @@ function IconButtonBase<T extends React.ElementType = 'button'>(
     {
       ref,
       className: classNames(
-        'ods-iconbtn',
-        `ods-iconbtn--${size}`,
-        disabled && 'ods-iconbtn--disabled',
+        'ods-icon-btn',
+        `ods-icon-btn--${size}`,
+        disabled && 'ods-icon-btn--disabled',
         className
       ),
       ...rest,
