@@ -112,20 +112,20 @@
 }
 
 .ods-icon-btn {
-  width: 48px;
-  height: 48px;
-  cursor: pointer;
-  border-radius: 50%;
+  background: transparent;
   border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 48px;
+  line-height: $line-height-tight;
   outline: none;
   text-align: center;
-  background: transparent;
-  line-height: $line-height-tight;
+  width: 48px;
 
   &:hover,
   &:focus {
-    color: $color-brand-primary-pure;
     background: $color-interface-light-up;
+    color: $color-brand-primary-pure;
   }
 
   &:active {
@@ -133,15 +133,15 @@
   }
 
   &--sm {
-    width: 40px;
-    height: 40px;
     font-size: $font-size-xs;
+    height: 40px;
+    width: 40px;
   }
 
   &--md {
-    width: 48px;
-    height: 48px;
     font-size: $font-size-sm;
+    height: 48px;
+    width: 48px;
   }
 
   &--disabled {
