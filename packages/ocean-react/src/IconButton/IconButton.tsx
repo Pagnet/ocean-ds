@@ -18,7 +18,7 @@ export type IconButtonProps<P extends React.ElementType = 'button'> = {
      */
     size?: 'sm' | 'md';
     /**
-     * Spans the full width of the Button parent.
+     * If true, the button will be disabled.
      * @default false
      */
     disabled?: boolean;
