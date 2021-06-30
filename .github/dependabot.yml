@@ -7,6 +7,6 @@ updates:
     reviewers:
       - 'ocean-ds/core-web'
     assignees:
-      - 'SauloSilva'
+      - 'leonardoalemax'
     commit-message:
       prefix: 'chore'

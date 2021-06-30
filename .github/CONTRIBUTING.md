@@ -83,7 +83,7 @@ It’s important that every piece of code is reviewed by at least one core contr
 <details><summary>Prerequisites</summary>
 <p>
 
-- Node 12.8.0+ _(if you need other versions we recommend the [node version manager](https://github.com/nvm-sh/nvm))_
+- Node 14.13.0+ _(if you need other versions we recommend the [node version manager](https://github.com/nvm-sh/nvm))_
 - Yarn 1.22.0+ _(required, because of [yarn workspace](https://classic.yarnpkg.com/en/docs/workspaces/))_
 - VSCode _(optional, but it's useful because we share common configs and extensions)_
 

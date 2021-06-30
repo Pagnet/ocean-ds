@@ -1,6 +1,6 @@
 {
   "name": "@useblu/ocean-react-formik",
-  "version": "1.2.3",
+  "version": "1.2.5",
   "description": "Bindings for using formik with ocean-react.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -25,7 +25,7 @@
     "react-dom": ">=16.8.0"
   },
   "devDependencies": {
-    "@useblu/ocean-react": "^1.2.3",
+    "@useblu/ocean-react": "^1.2.5",
     "formik": "^2.2.6"
   }
 }
