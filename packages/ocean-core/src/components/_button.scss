@@ -110,3 +110,49 @@
     width: 100%;
   }
 }
+
+.ods-icon-btn {
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 48px;
+  line-height: $line-height-tight;
+  outline: none;
+  text-align: center;
+  width: 48px;
+
+  &:hover,
+  &:focus {
+    background: $color-interface-light-up;
+    color: $color-brand-primary-pure;
+  }
+
+  &:active {
+    background: $color-interface-light-down;
+  }
+
+  &--sm {
+    font-size: $font-size-xs;
+    height: 40px;
+    width: 40px;
+  }
+
+  &--md {
+    font-size: $font-size-sm;
+    height: 48px;
+    width: 48px;
+  }
+
+  &--disabled {
+    background-color: $color-interface-light-down;
+    color: $color-interface-dark-up;
+    cursor: not-allowed;
+
+    &:hover,
+    &:focus {
+      background-color: $color-interface-light-down;
+      color: $color-interface-dark-up;
+    }
+  }
+}

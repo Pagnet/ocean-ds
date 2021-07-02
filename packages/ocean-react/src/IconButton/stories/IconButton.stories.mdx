@@ -1,0 +1,122 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import { XOutline, ChevronDown } from '@useblu/ocean-icons-react';
+import IconButton from '../IconButton';
+
+<Meta
+  title="Components/IconButton"
+  component={IconButton}
+  argTypes={{
+    component: {
+      name: 'component',
+      description:
+        'The component used for the root node. Either a string to use a HTML element or a component.',
+      defaultValue: 'button',
+      table: {
+        type: {
+          summary: 'elementType',
+        },
+        defaultValue: {
+          summary: 'button',
+        },
+      },
+      control: {
+        type: null,
+      },
+    },
+    size: {
+      name: 'size',
+      description: 'The size of the icon button.',
+      defaultValue: 'md',
+      table: {
+        type: {
+          summary: '"sm" | "md"',
+        },
+        defaultValue: {
+          summary: 'md',
+        },
+      },
+      control: {
+        type: null,
+      },
+    },
+    disabled: {
+      name: 'disabled',
+      description: 'If true, the button will be disabled.',
+      defaultValue: false,
+      table: {
+        type: {
+          summary: 'true | false',
+        },
+        defaultValue: {
+          summary: false,
+        },
+      },
+      control: {
+        type: null,
+      },
+    },
+  }}
+/>
+
+# IconButton API
+
+The API documentation of the IconButton React component. Learn more about the props and the CSS customization points.
+
+## Import
+
+```javascript
+import { IconButton } from '@useblu/ocean-react';
+```
+
+## Usage
+
+<Canvas withSource="open" withToolbar>
+  <Story name="Usage">
+    <IconButton disabled size="sm">
+      <ChevronDown />
+    </IconButton>
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable story="Usage" of="." />
+
+The ref is forwarded to the root element.
+
+Any other props supplied will be provided to the root element (native element).
+
+## CSS
+
+| Global class            | Description                         |
+| ----------------------- | ----------------------------------- |
+| .ods-icon-btn           | Styles applied to the root element. |
+| .ods-icon-btn--[sm,md]  | Specifies the width of the button.  |
+| .ods-icon-btn--disabled | Styles of a disabled button.        |
+
+## Playground
+
+<Canvas>
+  <Story
+    name="Playground"
+    argTypes={{
+      size: {
+        name: 'size',
+        control: {
+          type: 'select',
+          options: ['sm', 'md'],
+        },
+      },
+      disabled: {
+        name: 'disabled',
+        control: 'boolean',
+      },
+    }}
+  >
+    {(props) => (
+      <IconButton {...props}>
+        <XOutline />
+      </IconButton>
+    )}
+  </Story>
+</Canvas>
