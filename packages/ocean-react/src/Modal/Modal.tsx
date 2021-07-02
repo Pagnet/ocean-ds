@@ -12,6 +12,7 @@ export type ModalProps = {
   blocked?: boolean;
   /**
    * Determine the max-width of the modal (desktop only).
+   * If the maxWidth is set to 'lg', the modal will become fullscreen on smaller screens.
    * The modal width grows with the size of the screen.
    * Set to `false` to disable `maxWidth`.
    * @default false

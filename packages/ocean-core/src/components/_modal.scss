@@ -103,3 +103,10 @@ $max-widths: (
     }
   }
 }
+
+.ods-modal__content--lg {
+  @include media-breakpoint-down(md) {
+    border-radius: 0;
+    min-height: 100%;
+  }
+}
